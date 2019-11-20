@@ -1,11 +1,11 @@
 <?php
-$token = '6e484ceb1dfbc15b72c6730709abe6927e5c4d76';
+$token = ''; // Github deactivates existing tokens
 $url = 'https://api.github.com/graphql';
 
 //GRAPHQL request
 $query = <<<'JSON'
 query{
-  repository(owner: "claaudius", name: "test") {
+  repository(owner: "claaudius", name: "GithubApi") {
     object(expression: "master") {
       ... on Commit {
         history {                   
